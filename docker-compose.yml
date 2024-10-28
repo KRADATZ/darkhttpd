@@ -1,0 +1,10 @@
+services:
+  darkhttpd:
+    container_name: darkhttpd-website
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./html:/var/www/htdocs:ro"
+    ports:
+      - "8080:80"

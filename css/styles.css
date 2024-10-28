@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.encabezado-contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid #3498db;
+}
+
+.encabezado-texto h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #3498db;
+}
+
+.encabezado-texto p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.portafolio {
+    margin: 40px 0;
+}
+
+.elemento {
+    background-color: #1a1a1a;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+
+.elemento:hover {
+    transform: translateY(-5px);
+}
+
+.elemento img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.elemento h2 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5em;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+}
+
+.elemento a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+    .encabezado-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        margin: 0 0 20px 0;
+    }
+}
